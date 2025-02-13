@@ -77,7 +77,7 @@ set(ICU_INCLUDE_DIRS "${ICU_INSTALL_DIR}/include")
 # Compile flags
 
 if(NOT WIN32)
-  set(ICU_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wno-deprecated-declarations")
+  set(ICU_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC -Wno-deprecated-declarations -std=c++11")
   set(ICU_C_FLAGS "${CMAKE_C_FLAGS} -fPIC -Wno-deprecated-declarations")
 endif()
 
